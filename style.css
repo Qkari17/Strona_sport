@@ -7,10 +7,17 @@ html {
 }
 
 body{
-    background-color: #c2eecf
+    background-color: #c2eecf;
+}
+main{
+    width: 100%;
+    max-width: 80%;
+    margin: 0px 10% 0px 10%;
+    background-color: rgb(227, 241, 241);
 }
 h1{
-    color:rgb(240, 101, 101)
+    color:rgb(240, 101, 101);
+    text-align: center;
 }
 h2{color: #1460aa
 }
@@ -19,9 +26,6 @@ h3{background-color: darkslateblue
 h3{color: rgb(255, 243, 243);
  }
 
-#judo{
-    color: rgb(125, 2, 107);
-}
 .box{
     width: 200px;
     height: 200px;
@@ -33,4 +37,51 @@ h3{color: rgb(255, 243, 243);
 }
 .header__image{
     width: 50%;
+    margin: 5px;
+}
+.navigation{
+    background-color: rgb(71, 126, 0);
+}
+.navigation__link{
+    color: #ffffffff;
+    
+}
+.header{
+    background-color:#1460aa ;
+    border: 5px solid  rgb(227, 241, 241);
+
+}
+.section__article--text{
+    margin: 5px
+}
+.footer{
+    background-color: rgb(71, 126, 0);
+    padding-bottom: 100px;
+}
+.footer__text{
+    margin-left: 10%;
+    color:#fefefe
+}
+.footer_text_link{
+    color:inherit
+}
+.navigation__link--japan{
+    margin-left: 10%;
+}
+.section__header{
+    margin: 5px;
+       vertical-align:middle;
+    line-height: normal;
+}
+.section__header--box{
+    background-color: #daafeb;
+   border-radius: 100%;
+   height: 50px;
+   width: 300px;
+    display: grid;
+    place-items: center;
+    margin:auto
+}
+.section__text{
+    background-color: #daafeb;
 }
