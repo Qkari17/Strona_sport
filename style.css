@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body{
     background-color: #c2eecf
 }
@@ -10,9 +18,19 @@ h3{background-color: darkslateblue
 }
 h3{color: rgb(255, 243, 243);
  }
-.footBall{
-    color: rgb(251, 174, 234);
-}
+
 #judo{
     color: rgb(125, 2, 107);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 40px;
+}
+.Header__link{
+    color: inherit;
+}
+.header__image{
+    width: 50%;
 }

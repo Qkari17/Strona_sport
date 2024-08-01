@@ -6,47 +6,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projekt1</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<header>
-		<nav>
-			<a href="index.html">Japonia</a>
-			<a href="narodowe_sporty_polski.html">Polska</a>
-			<a href="narodowe_sporty_francja.html">Francja</a>
+		<nav class="navigation">
+			<a href="index.html" class="navigation__link">Japonia</a>
+			<a href="narodowe_sporty_polski.html" class="navigation__link">Polska</a>
+			<a href="narodowe_sporty_francja.html" class="navigation__link">Francja</a>
 		</nav>
 	</header>
 	<main>
 		<header>
-			<h1>Narodowe sporty w Polski</h1>
-			<img src="Flaga_polska_110_70_cm.jpg" alt="flagaPolski">
+			<h1 class="header">Narodowe sporty w Polski</h1>
+			<img src="Flaga_polska_110_70_cm.jpg" alt="flagaPolski" class="header__image">
 		</header>
-		<section>
-			<h2>Sporty zespołowe</h2>
-			<article>
-				<h3 class="footBall">Piłka nożna</h3>
-				<p>Piłka nożna jest bez wątpienia najpopularniejszym sportem w Polsce. Polska reprezentacja narodowa ma
+		<section class="section">
+			<h2 class="section__header">Sporty zespołowe</h2>
+			<p class="section_text">Sporty zespołowe to dyscypliny sportowe, w których rywalizacja odbywa się pomiędzy drużynami składającymi
+				się
+				z kilku zawodników. Przykłady:</p>
+			<article class="section__article">
+				<h3 class="section__article_header">Piłka nożna</h3>
+				<p class="section__article_text">Piłka nożna jest bez wątpienia najpopularniejszym sportem w Polsce. Polska reprezentacja narodowa ma
 					bogatą historię, a polscy piłkarze są znani na całym świecie. Najważniejsze osiągnięcia to m.in.
 					trzecie miejsce na Mistrzostwach Świata w 1974 i 1982 roku.</p>
 			</article>
-			<article>
-				<h3>Siatkówka</h3>
-				<p>Siatkówka to drugi niezwykle popularny sport w Polsce. Polska reprezentacja mężczyzn odniosła wiele
+			<article class="section__article">
+				<h3 class="section__article_header">Siatkówka</h3>
+				<p class="section__article_text">Siatkówka to drugi niezwykle popularny sport w Polsce. Polska reprezentacja mężczyzn odniosła wiele
 					sukcesów na arenie międzynarodowej, w tym zdobycie złotego medalu na Mistrzostwach Świata w 2014 i
 					2018 roku oraz złotego medalu na Mistrzostwach Europy w 2009 roku.</p>
 			</article>
 		</section>
-		<section>
-			<h2>Sporty indywidualne</h2>
-			<article>
-				<h3>Lekkoatletyka</h3>
-				<p>Lekkoatletyka również cieszy się dużą popularnością w Polsce, zwłaszcza w kontekście międzynarodowych
+		<section class="section">
+			<h2 class="section__header">Sporty indywidualne</h2>
+			<p class="section_text">Sporty indywidualne to dyscypliny sportowe, w których rywalizacja odbywa się pomiędzy pojedynczymi
+				zawodnikami, a nie drużynami. Każdy sportowiec występuje samodzielnie i dąży do osiągnięcia jak
+				najlepszego
+				wyniku, bez bezpośredniej pomocy innych zawodników. Przykłady:</p>
+			<article class="section__article">
+				<h3 class="section__article_header">Lekkoatletyka</h3>
+				<p class="section__article_text">Lekkoatletyka również cieszy się dużą popularnością w Polsce, zwłaszcza w kontekście międzynarodowych
 					sukcesów polskich sportowców. Polska może pochwalić się wieloma medalistami olimpijskimi i mistrzami
 					świata w różnych dyscyplinach lekkoatletycznych.</p>
 			</article>
-			<article>
-				<h3>Skoki narciarskie</h3>
-				<p>Skoki narciarskie to sport zimowy, który zdobył ogromną popularność w Polsce, zwłaszcza dzięki
+			<article class="section__article">
+				<h3 class="section__article_header">Skoki narciarskie</h3>
+				<p class="section__article_text">Skoki narciarskie to sport zimowy, który zdobył ogromną popularność w Polsce, zwłaszcza dzięki
 					sukcesom Adama Małysza oraz Kamila Stocha. Polska ma silną reprezentację w skokach narciarskich, a
 					zawody Pucharu Świata w Zakopanem przyciągają tysiące kibiców.</p>
 			</article>
