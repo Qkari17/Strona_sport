@@ -10,3 +10,4 @@ const umineko = document.querySelector('.umineko__js')
 console.log(umineko)
 
 umineko.style.color = 'green'
+umineko.style.bottom = '0px'
