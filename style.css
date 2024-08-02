@@ -10,9 +10,8 @@ body{
     background-color: #c2eecf;
 }
 main{
-    width: 100%;
-    max-width: 80%;
-    margin: 0px 10% 0px 10%;
+    max-width:800px;
+    margin: 0 auto;
     background-color: rgb(227, 241, 241);
 }
 h1{
@@ -21,7 +20,9 @@ h1{
 }
 h2{color: #1460aa
 }
-h3{background-color: darkslateblue
+h3{background-color: darkslateblue;
+    max-width: 700px;
+    border-right: 30px rgb(79, 189, 183) solid;
 }
 h3{color: rgb(255, 243, 243);
  }
