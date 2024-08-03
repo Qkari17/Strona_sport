@@ -9,12 +9,14 @@ html {
 body{
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #95d3db 50%, #d8d6d9 100%);
-    
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 main{
     max-width:800px;
     margin: 0 auto;
     background-color: rgb(227, 241, 241);
+   
 }
 h1{
     color:rgb(240, 101, 101);
@@ -61,11 +63,14 @@ height: 6rem;
 }
 .navigation{
     background-color: rgb(71, 126, 0);
-    
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 .navigation__link{
     color: #ffffffff;
-    
+    line-height: 2.0;
+    font-size: 1.5rem;
 }
 .header{
     background-color:#1460aa ;
@@ -74,6 +79,7 @@ height: 6rem;
 }
 .section__article--text{
     padding-left: 16px;
+    padding-right: 7em;
 }
 .footer{
     background-color: rgb(71, 126, 0);
@@ -88,12 +94,9 @@ height: 6rem;
 .footer_text_link{
     color:inherit
 }
-.navigation__link--japan{
-    margin-left: 10%;
-}
 .section__header{
     margin: 5px;
-       vertical-align:middle;
+    vertical-align:middle;
     line-height: normal;
 }
 .section__header--box{
