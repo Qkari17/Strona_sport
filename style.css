@@ -7,7 +7,9 @@ html {
 }
 
 body{
-    background-color: #c2eecf;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #95d3db 50%, #d8d6d9 100%);
+    
 }
 main{
     max-width:800px;
@@ -30,8 +32,25 @@ h3{color: rgb(255, 243, 243);
 .box{
     width: 200px;
     height: 200px;
-    background-color: red;
-    padding: 40px;
+    background-color: rgb(116, 17, 17);
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+    align-items: center;
+
+}
+.box__item{
+background-color: #1460aa;
+border: 4px solid blueviolet;
+width: 3rem;
+font-size: 2rem;
+height: 6rem;
+}
+.box__item--even{
+  align-self: baseline;
+}
+.box__item--text{
+   
 }
 .Header__link{
     color:black
