@@ -51,9 +51,7 @@ height: 6rem;
 .box__item--even{
   align-self: baseline;
 }
-.box__item--text{
-   
-}
+
 .Header__link{
     color:black
 }
@@ -133,8 +131,34 @@ height: 6rem;
 .article__pair{
     grid-column: 1 /3;
     display: flex;
-    align-items:space-between;
+    flex-direction: column;
+align-items: center;
 }
+
 .section__article{
     max-width: 50%;
+    
+}
+
+@media screen and (min-width: 768px){
+    .header__text{
+        color: #95d3db;
+    }
+    .article__pair{
+        grid-column: 1 /3;
+        display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+    }
+}
+@media screen and (min-width: 1280px){
+    .header__text{
+        color: #80db44;
+    }
+    .article__pair{
+        grid-column: 1 /3;
+        display: flex;
+        flex-direction: row;
+       align-items: flex-start;
+    }
 }
