@@ -50,3 +50,4 @@ switch('japonia'){
         console.log('trudno stwierdzić')
 }
 (1>2) ? console.log('matma') : console.log('nie jest to matma')
+

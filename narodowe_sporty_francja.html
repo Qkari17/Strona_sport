@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt1</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="normalizes.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="head">
-        <nav class="navigation">
+        <nav class="navigation navigation__js">
             <a href="index.html" class="navigation__link navigation__link--japan">Japonia</a>
             <a href="narodowe_sporty_polski.html" class="navigation__link">Polska</a>
             <a href="narodowe_sporty_francja.html" class="navigation__link">Francja</a>
         </nav>
+        <button class="hamburger hamburger__js" aria-label="menu">🍔</button>
     </header>
     <main>
         <header>
             <div class="header">
             <h1 class="header__text">Narodowe sporty w Francji</h1>
             </div>
-            <img src="Flag_of_France_(1794–1815,_1830–1974).svg.png" alt="flagaFrancji" class="header__image">
-        </header>
+             <img src="Flag_of_France_(1794–1815,_1830–1974).svg.png" alt="flagaFrancji" class="header__image">
+                </header>
         <section class="section">
                 <div class="section__header--box">
                 <h2 class="section__header">Sporty zespołowe</h2>
@@ -87,6 +88,7 @@
     </footer>
     </div>
     <script defer src="main.js"></script>
+    <script defer src="hamburger.js"></script>
 </body>
 
 </html>
