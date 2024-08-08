@@ -1,90 +1,87 @@
+
+@import "components/box.scss";
+@import "../../node_modules/normalize.css/";
 html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #95d3db 50%, #d8d6d9 100%);
     font-family: Arial, Helvetica, sans-serif;
-   
+
 }
-main{
-    max-width:800px;
+
+main {
+    max-width: 800px;
     margin: 0 auto;
     background-color: rgb(227, 241, 241);
-   
+
 }
-header{
+
+header {
     min-height: 50px;
     background-color: rgb(71, 126, 0);
 }
-h2{color: #1460aa
+
+h2 {
+    color: #1460aa
 }
-h3{background-color: darkslateblue;
+
+h3 {
+    background-color: darkslateblue;
     max-width: 700px;
     border-right: 30px rgb(79, 189, 183) solid;
 }
-h3{color: rgb(255, 243, 243);
- }
 
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(116, 17, 17);
-    display: flex;
-    justify-content: space-around;
-    column-gap: 2rem;
-    align-items: center;
+h3 {
+    color: rgb(255, 243, 243);
+}
 
-}
-.box__item{
-background-color: #1460aa;
-border: 4px solid blueviolet;
-width: 3rem;
-font-size: 2rem;
-height: 6rem;
-}
-.box__item--even{
-  align-self: baseline;
-}
-.head{
+.head {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: flex-end;
 }
-.header{
-    background-color:#1460aa ;
-    border: 5px solid  rgb(227, 241, 241);
+
+.header {
+    background-color: #1460aa;
+    border: 5px solid rgb(227, 241, 241);
     display: flex;
     justify-content: center;
 
-}
-.Header__link{
-    color:black;
-    background-color: #0093E9;
-}
-.header__image{
-   width: 100%
+    &__link {
+        color: black;
+        background-color: #0093E9;
+    }
 
+    &__image {
+        width: 100%
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: rgb(252, 81, 81);
+
+        &::before {
+            content: "";
+            width: 3vh;
+            height: 3vh;
+            display: inline-block;
+            border-radius: 100px;
+            background: #28b870;
+        }
+    }
 }
-.header__text{
-    font-size: 1.5rem;
-    color: rgb(252, 81, 81);
-}
-.header__text::before{
-    content: "";
-    width: 3vh;
-    height: 3vh;
-    display: inline-block;
-    border-radius: 100px;
-    background: #28b870;
-}
-.navigation{
+
+.navigation {
     background-color: rgb(71, 126, 0);
     display: none;
     align-items: center;
@@ -93,101 +90,119 @@ height: 6rem;
     position: absolute;
     width: 100%;
     top: 50px;
+
+    &__open {
+        display: flex;
+    }
+
+    &__link {
+        color: #ffffffff;
+        line-height: 2.0;
+        font-size: 1.5rem;
+    }
 }
-.navigation__open{
-    display: flex;
-}
-.navigation__link{
-    color: #ffffffff;
-    line-height: 2.0;
-    font-size: 1.5rem;
-}
-.section{
+
+.section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.section__article--header{
+
+.section__article--header {
     padding-left: 16px;
 }
-.section__article--text{
+
+.section__article--text {
     padding-left: 16px;
-  
+
 }
-.section__header{
+
+.section__header {
     margin: 5px;
-    vertical-align:middle;
+    vertical-align: middle;
     line-height: normal;
 }
-.section__header--box{
+
+.section__header--box {
     background-color: #daafeb;
-   border-radius: 100%;
-   height: 50px;
-   width: 300px;
+    border-radius: 100%;
+    height: 50px;
+    width: 300px;
     display: grid;
     place-items: center;
-    margin:auto;
+    margin: auto;
     grid-column: 1/3;
 }
-.section__text{
+
+.section__text {
     background-color: #daafeb;
     padding: 16px;
     grid-column: 1/3;
 }
-.footer{
+
+.footer {
     background-color: rgb(71, 126, 0);
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
+
+    &__text {
+        color: #fefefe;
+        padding-top: 16px;
+
+        &--link {
+            color: inherit
+        }
+    }
 }
-.footer__text{
-    
-    color:#fefefe;
-    padding-top: 16px;
-}
-.footer_text_link{
-    color:inherit
-}
-.umineko{
+
+.umineko {
     padding-bottom: 0px;
     margin: 0px;
 
 }
-.article__pair{
+
+.article__pair {
     grid-column: 1 /3;
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
 }
-.image__container{
+
+.image__container {
     display: flex;
     justify-content: center;
 }
-.hamburger{
+
+.hamburger {
     padding: 4px;
     background-color: rgb(71, 126, 0);
     border: 0;
     font-size: 2.5rem;
 }
 
-@media screen and (min-width: 768px){
-    .header__text{
+@media screen and (min-width: 768px) {
+    .header__text {
         color: #95d3db;
         font-size: 2.5rem;
     }
-    .article__pair{
+
+    .article__pair {
         grid-column: 1 /3;
         display: flex;
-       flex-direction: row;
-       align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
     }
-    .section__article{
+
+    .section__article {
         flex: 1 1 0;
         width: 0;
     }
-    .header__image{
-        width: 50%     
-     }
-     .navigation{
+
+    .header__image {
+        width: 50%
+    }
+
+    .navigation {
         background-color: rgb(71, 126, 0);
         display: flex;
         justify-content: center;
@@ -195,34 +210,41 @@ align-items: center;
         flex-direction: row;
         position: static;
     }
-    .navigation__link{
+
+    .navigation__link {
         color: #ffffffff;
         line-height: 2.0;
         font-size: 1.5rem;
-        }
-        header{
-            background-color: rgb(227, 241, 241);
-        }
-        .hamburger{
-            display: none;
+    }
+
+    header {
+        background-color: rgb(227, 241, 241);
+    }
+
+    .hamburger {
+        display: none;
     }
 }
-@media screen and (min-width: 1280px){
-    .header__text{
+
+@media screen and (min-width: 1280px) {
+    .header__text {
         color: #80db44;
         font-size: 2.5rem;
     }
-    .article__pair{
+
+    .article__pair {
         grid-column: 1 /3;
         display: flex;
         flex-direction: row;
-       align-items: flex-start;
+        align-items: flex-start;
     }
-    .section__article{
+
+    .section__article {
         flex: 1 1 0;
         width: 0;
     }
-    .header__image{
-        width: 50%     
-     }
+
+    .header__image {
+        width: 50%
+    }
 }

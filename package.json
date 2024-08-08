@@ -1,12 +1,11 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cow": "cowsay moooo",
     "start": "parcel src/index.html",
-    "build":"parcel build src/index.html"
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +16,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0"
   }
 }

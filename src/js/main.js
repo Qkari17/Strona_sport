@@ -1,7 +1,10 @@
+import podatek, { calculate as superCalculate , myFavoriteColour} from "./calculate";
+
 const firstName = "Dawid"
 const age = 26
+console.log(myFavoriteColour);
 
-
+console.log(podatek);
 
 console.log(`Nazywam się ${firstName} i mam ${age} lat`);
 
@@ -12,11 +15,7 @@ console.log(umineko)
 
 
 
-function calculate(myNumber) {
-    myNumber= myNumber+4
-    return myNumber*7;
-}
-console.log(calculate(2))
+
 
 const greet =(name, age) =>{
     const result = `Witaj ${name}! Masz ${age} lat!`
