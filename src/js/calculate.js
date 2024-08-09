@@ -2,7 +2,7 @@ function calculate(myNumber) {
     myNumber= myNumber+4
     return myNumber*7;
 }
-console.log(calculate(2))
+console.log(calculate(6))
 
 export{calculate};
 

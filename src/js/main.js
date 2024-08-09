@@ -1,4 +1,5 @@
 import podatek, { calculate as superCalculate , myFavoriteColour} from "./calculate";
+import { subtract } from "./substract";
 
 const firstName = "Dawid"
 const age = 26
@@ -50,3 +51,8 @@ switch('japonia'){
 }
 (1>2) ? console.log('matma') : console.log('nie jest to matma')
 
+
+console.log(superCalculate(4))
+
+
+console.log(subtract(7))
