@@ -1,4 +1,3 @@
-var myNumberTwo= 3
-const subtract = myNumber => (myNumber-myNumberTwo)
-console.log(subtract(5))
-export {subtract}
+const substract = (a,b) => {return a-b}
+
+export {substract}

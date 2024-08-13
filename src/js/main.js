@@ -1,5 +1,5 @@
 import podatek, { calculate as superCalculate , myFavoriteColour} from "./calculate";
-import { subtract } from "./substract";
+import { substract } from "./substract";
 
 const firstName = "Dawid"
 const age = 26
@@ -55,4 +55,32 @@ switch('japonia'){
 console.log(superCalculate(4))
 
 
-console.log(subtract(7))
+console.log(`Różnica między 10, a 3 to =${substract(10,3)}`)
+
+const hardware = ['mouse','keyboard','screen']
+console.log(hardware[1])
+console.log(hardware.length)
+
+const myObject={
+    name:'Dawid',
+    age: 26
+}
+hardware.push(myObject); 
+
+const myText = "Maratony są za długie"
+
+console.log(myText[10])
+
+for (let i=0; i<3;i++){
+    console.log(`${i} wykonanie pętli`)
+}
+for (let i=0; i<hardware.length;i++){
+    console.log(`Index: ${i} jest to: ${hardware[i]}`)
+}
+const groupOfNumbers = [1,30,5,7]
+let liczba = 0
+
+for (let i=0; i<groupOfNumbers.length;i++){
+   liczba= liczba + groupOfNumbers[i]
+   console.log(liczba)
+}

@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(116, 17, 17);
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+    align-items: center;
+
+    &__item {
+        background-color: #1460aa;
+        border: 4px solid blueviolet;
+        width: 3rem;
+        font-size: 2rem;
+        height: 6rem;
+
+        &--even {
+            align-self: baseline;
+        }
+    }
+}
