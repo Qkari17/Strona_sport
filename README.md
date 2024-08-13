@@ -1,7 +1,7 @@
-#Pierwszy projekt o tematyce front-endu
+# Pierwszy projekt o tematyce front-endu
 
 Rozbudowany o nowe treści wraz z poznawaniem nowych technik
-##Technologie
+## Technologie
 
 -HTML
 -CSS
